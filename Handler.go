@@ -5,9 +5,7 @@ import (
 	"strings"
 )
 
-
-
-func MatchRoutes(req *Req , server *Server) HandleFunc {
+func MatchRoutes(req *Req , routes map[string]HandleFunc) HandleFunc {
 
 	// initialises matched variable with false value
 	var matched bool = false
@@ -18,7 +16,7 @@ func MatchRoutes(req *Req , server *Server) HandleFunc {
 	// splits method path by /
 	method_Path_slice := strings.Split(methodPath,"/")
 
-	for key,value := range server.Routes {
+	for key,value := range routes {
 		// spilits the method_path/key
 		key_slice := strings.Split(key,"/")
 

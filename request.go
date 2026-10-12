@@ -13,7 +13,7 @@ type Req struct {
 	Body    string
 }
 
-func Parse_Request(req string) *Req {
+func Parser(req string) *Req {
 	// splits the full req into two parts - header section and body
 	header_section, content_body, _ := strings.Cut(req, "\r\n\r\n")
 	// splits the header section into each new line
