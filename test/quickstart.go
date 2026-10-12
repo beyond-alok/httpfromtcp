@@ -1,6 +1,6 @@
 package main
 
-import "github.com/alokxgit/httpfromtcp"
+import "github.com/beyond-alok/httpfromtcp"
 
 func main() {
 	server := httpfromtcp.NewServer()

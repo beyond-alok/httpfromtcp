@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/alokxgit/httpfromtcp"
+	"github.com/beyond-alok/httpfromtcp"
 )
 
 func mains() {
